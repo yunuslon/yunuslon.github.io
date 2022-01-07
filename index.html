@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#5E3AEE",
+                        darkD: "#0F1221",
+                        grayD: "#F0F0F5",
+                        "primary-dark": "#c05621",
+                    },
+                    container: {
+                        padding: "2rem",
+                        center: true,
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-white antialiased">
@@ -21,7 +39,7 @@
 
         </div>
     </nav>
-    <div class="container">
+    <div class="p-10 justify-center">
         <div class="flex items-center bg-gray-300 w-auto h-auto shadow-xs rounded-sm py-16">
             <div class="w-1/2 flex flex-col item px-24 leading-snug">
                 <p class="text-black text-5xl font-bold">Hello,</p>
